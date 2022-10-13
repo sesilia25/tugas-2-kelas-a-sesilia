@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,66 +8,77 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Tugas 2</title>
 </head>
+
 <body>
     <header class="p-5 w-screen sm:px-20 lg:px-32">
-        <div class="hidden relative z-100">
-            <div class="absolute w-full bg-[#FBE0DC] px-4 py-4 text-[#272042] font-semibold lg:hidden">
-                <div class="flex justify-end">
+        <nav>
+            <div class="hidden relative z-100">
+                <div class="absolute w-full bg-[#f5d9d4] px-4 py-4 text-[#272042] font-semibold lg:hidden">
+                    <div class="flex justify-end">
+                        <button>
+                            <img src="./assets/img/icons8-x-50.png" alt="" id="Menu">
+                        </button>
+                    </div>
+                    <ul id="navbarMenu" class="flex flex-col space-y-4 text-center">
+                        <li>Home</li>
+                        <li>Beverages</li>
+                        <li>Chef</li>
+                        <li>ingredient</li>
+                        <li>Stories</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div class="flex space-x-4 items-center">
+                    <img src="./assets/img/🍔.svg" alt="">
+                    <h1 class="text-xl font-semibold text-[#272042]">Foodyar</h1>
+                </div>
+                <div class="lg:hidden">
                     <button>
-                        <img src="./assets/img/icons8-x-50.png" alt="">
+                        <img src="./assets/img/Menu (1).png" alt="">
                     </button>
                 </div>
-                <ul class="flex flex-col space-y-4 text-center">
-                    <li>Home</li>
-                    <li>Beverages</li>
-                    <li>Chef</li>
-                    <li>ingredient</li>
-                    <li>Stories</li>
-                </ul>
+                <div class="hidden lg:flex space-x-9 my-auto">
+                    <ul class="flex flex-row space-x-9 self-center text-[#8B8BA5]">
+                        <li class="text-[#272042] h-15 w-[48px] border-b-[4px] border-b-[#FBE0DC]">Home</li>
+                        <li class="hover:text-[#272042]">Beverages</li>
+                        <li class="hover:text-[#272042]">Chef</li>
+                        <li class="hover:text-[#272042]">ingredient</li>
+                        <li class="hover:text-[#272042]">Stories</li>
+                    </ul>
+                    <button class="bg-[#FBE0DC] py-2 px-4 font-semibold rounded-xl">
+                        My Kitchen
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="flex justify-between">
-            <div class="flex space-x-4 items-center">
-                <img src="./assets/img/🍔.svg" alt="">
-                <h1 class="text-xl font-semibold text-[#272042]">Foodyar</h1>
-            </div>
-            <div class="lg:hidden">
-                <button>
-                    <img src="./assets/img/Menu (1).png" alt="">
-                </button>
-            </div>
-            <div class="hidden lg:flex space-x-9">
-                <ul class="flex flex-row space-x-9 self-center text-[#8B8BA5]">
-                    <li class="text-[#272042]">Home</li>
-                    <li class="hover:text-[#272042]">Beverages</li>
-                    <li class="hover:text-[#272042]">Chef</li>
-                    <li class="hover:text-[#272042]">ingredient</li>
-                    <li class="hover:text-[#272042]">Stories</li>
-                </ul>
-                <button class="bg-[#FBE0DC] py-2 px-4 font-semibold rounded-xl">
-                    My Kitchen
-                </button>
-            </div>
-        </div>
+        </nav>
+
     </header>
     <main>
-        <div class="flex flex-col space-y-4 p-5 lg:flex-row lg:space-y-0 lg:items-center lg:content-center lg:w-[70%] lg:mx-auto lg: space-x-20 xl:w-full xl:justify-center">
+        <div
+            class="flex flex-col space-y-4 p-5 lg:flex-row lg:space-y-0 lg:items-center lg:content-center lg:w-[70%] lg:mx-auto xl:w-full xl:justify-center">
             <div class="flex flex-col space-y-3 px-4">
-                <h1 class="text-[#272042] font-bold text-[26px] text-center sm:text-[26px] xl:text-[46px] lg:text-left">
-                    Eat What You Cook
-                    <br>
-                    With Us Together!
-                </h1>
+                <div class="relative">
+                    <h1 class="text-[#272042] font-bold text-[26px] text-center sm:text-[26px] xl:text-[46px] lg:text-left z-99">
+                        Eat What You Cook
+                        <br>
+                        With Us Together!</span>
+                    </h1>
+                    <div class="absolute -z-99 right-5 bottom-4 w-52 border-b-4 border-b-[#FBE0DC]">
+                    </div>
+                </div>
+
                 <p class="text-[#8B8BA5] text-center text-[10px] sm:text-[12px] xl:text-[20px] lg:text-left">
                     When you eat something that cooked by
                     <br>
                     yourself, the happiness is priceless
-                </p>                
-                <button class="text-white text-[12px] lg:text-[16px] font-bold rounded-xl bg-[#F7C531] w-max py-2 px-3 lg:px-4 self-center lg-text-[16px] lg:self-start">
+                </p>
+                <button
+                    class="text-white text-[12px] lg:text-[16px] font-bold rounded-xl bg-[#F7C531] w-max py-2 px-3 lg:px-4 self-center lg-text-[16px] lg:self-start">
                     Decide a Menu
                 </button>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto lg:mx-0">
                 <img src="./assets/img/pic.svg" alt="" class="sm:w-[350px] lg:w-[500px]">
             </div>
         </div>
@@ -88,56 +100,62 @@
                 </ul>
             </div>
             <div class="sm:hidden mt-4">
-                <div class="text-center">
-                    <img src="./assets/img/pic (1).svg" alt="" class="w-[200px] mx-auto">
-                    <h4 class="text-[#272042] mt-2">
-                        Salad Kiwi Sugga
-                    </h4>
-                    <p class="text-[#8B8BA5]">
-                        Amir Samantha
-                    </p>
-                    <div>
-                        ⭐⭐⭐⭐⭐
+                <div class="sm:hidden mt-4 flex-row">
+                    <div class="sm:hidden mt-4 flex-col">
+                        <div class="text-center mt-4">
+                            <img src="./assets/img/pic (2).svg" alt="" class="w-[200px] mx-auto">
+                            <h4 class="text-[#272042] mt-2">
+                                Avocado Muscle
+                            </h4>
+                            <p class="text-[#8B8BA5]">
+                                John Lennonk
+                            </p>
+                            <div>
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <img src="./assets/img/pic (3).svg" alt="" class="w-[200px] mx-auto">
+                            <h4 class="text-[#272042] mt-2">
+                                Bayam Red Poppeye
+                            </h4>
+                            <p class="text-[#8B8BA5]">
+                                Toekang Sayoer
+                            </p>
+                            <div>
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="text-center mt-4">
-                    <img src="./assets/img/pic (2).svg" alt="" class="w-[200px] mx-auto">
-                    <h4 class="text-[#272042] mt-2">
-                        Avocado Muscle
-                    </h4>
-                    <p class="text-[#8B8BA5]">
-                        John Lennonk
-                    </p>
-                    <div>
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <img src="./assets/img/pic (3).svg" alt="" class="w-[200px] mx-auto">
-                    <h4 class="text-[#272042] mt-2">
-                        Bayam Red Poppeye
-                    </h4>
-                    <p class="text-[#8B8BA5]">
-                        Toekang Sayoer
-                    </p>
-                    <div>
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <img src="./assets/img/pic (4).svg" alt="" class="w-[200px] mx-auto">
-                    <h4 class="text-[#272042] mt-2">
-                        Naga Fruity Joss
-                    </h4>
-                    <p class="text-[#8B8BA5]">
-                        Imelda Saranghae
-                    </p>
-                    <div>
-                        ⭐⭐⭐⭐⭐
+                    <div class="sm:hidden mt-4 flex-col">
+                        <div class="text-center mt-4">
+                            <img src="./assets/img/pic (2).svg" alt="" class="w-[200px] mx-auto">
+                            <h4 class="text-[#272042] mt-2">
+                                Avocado Muscle
+                            </h4>
+                            <p class="text-[#8B8BA5]">
+                                John Lennonk
+                            </p>
+                            <div>
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <img src="./assets/img/pic (3).svg" alt="" class="w-[200px] mx-auto">
+                            <h4 class="text-[#272042] mt-2">
+                                Bayam Red Poppeye
+                            </h4>
+                            <p class="text-[#8B8BA5]">
+                                Toekang Sayoer
+                            </p>
+                            <div>
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="hidden sm:grid sm:grid-cols-2 sm:gab-y-8 lg:flex space-x-10 justify-center mt-4">
+            <div class="hidden sm:grid sm:grid-cols-2 sm:gap-y-8 lg:flex space-x-10 justify-center mt-4">
                 <div class="text-center">
                     <img src="./assets/img/pic (1).svg" alt="" class="w-[200px] mx-auto">
                     <h4 class="text-[#272042] mt-2">
@@ -185,7 +203,7 @@
                     <div>
                         ⭐⭐⭐⭐⭐
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="py-5 px-10 sm:mt-10 sm:px-32 lg:px-64 xl:px-96">
                 <div class="relative">
@@ -194,12 +212,14 @@
                     </div>
                     <div class="text-center text-[#272042]">
                         <h5>
-                            Awalnya saya malu dengan mertua karena tidak bisa memasak, kini mereka lebih suka makan malam di rumah demi menyantap masakan yang saya buat sendiri
+                            Awalnya saya malu dengan mertua karena <br> tidak bisa memasak, kini mereka lebih suka <br>
+                            makan malam di rumah demi menyantap <br> masakan yang saya buat sendiri
                         </h5>
                     </div>
                 </div>
                 <div class="flex space-x-4 justify-center mt-4">
-                    <img src="./assets/img/pic (5).svg" alt="" class="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full">
+                    <img src="./assets/img/pic (5).svg" alt=""
+                        class="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full">
                     <div class="self-center">
                         <h4 class="text-[#272042] font-semibold sm:text-[22px]">
                             Camella Sarrah
@@ -211,7 +231,7 @@
                 </div>
             </div>
             <div class="p">
-                <div class="sm:hidden mt-4"">
+                <div class="sm:hidden mt-4">
                     <div class="text-center">
                         <h4 class="text-[#272042] font-bold text-[16px] lg:text-[26px]">
                             180.000+
@@ -245,7 +265,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="hidden sm:flex justify-center space-x-6 mt-6">
+                <div class="hidden sm:grid sm:grid-cols-2 sm:gap-y-8 lg:flex space-x-10 justify-center mt-4">
                     <div class="text-center">
                         <h4 class="text-[#272042] font-bold text-[16px] lg:text-[26px]">
                             180.000+
@@ -280,13 +300,15 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col item-center sm:flex-row p-5 sm:justify-center sm:space-x-20 lg:space-x-32 sm:mt-10">
-                <div>
-                    <img src="./assets/img/pic (6).svg" alt="" class="w-[200px] sm:w-[200px] lg:w-[300px] sm:items-center lg:item-center">
+            <div
+                class="flex flex-col item-center sm:flex-row p-5 sm:justify-center sm:space-x-20 lg:space-x-32 sm:mt-10">
+                <div class="mx-auto sm:mx-0">
+                    <img src="./assets/img/pic (6).svg" alt=""
+                        class="w-[200px] sm:w-[200px] lg:w-[300px] sm:items-center lg:item-center">
                 </div>
                 <div class="mt-4">
                     <h4 class="text-[#272042] font-bold text-[26px] text-center sm:text-left sm:text-[36px]">
-                        Download our app 
+                        Download our app
                         <br>
                         and join the contest
                     </h4>
@@ -300,19 +322,18 @@
                         <img src="./assets/img/google-play-download-android-app (1).svg" alt="" class="w-[100px]">
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
     </main>
     <footer>
-        <div class="flex flex-row px-[50px] w-max-content py-5 border-b-[1px] border-t-[1px] border-[#ECECEC] lg:py-10 mx-auto">
-            <div class="mr-[50px]">
-                <div class="flex space-x-4 text-[#272042] text-[20px] font-semibold sm:justify-center">
+        <div class="px-4 md:px-[50px] py-5 border-b-[1px] border-t-[1px] border-[#ECECEC] lg:py-10 mx-auto">
+            <div
+                class="flex flex-col md:flex-row mx-0 md:mx-auto w-max space-x-5 md:space-x-20 lg:space-x-40 space-y-10">
+                <div class="flex text-[#272042] text-[20px] font-semibold sm:justify-center">
                     <img src="./assets/img/🍔.svg" alt="" class="sm:w-[50px]">
-                    <h6 class="sm:self-center">
-                        Foodyar
-                    </h6>
+                    <h6 class="my-auto pl-5">Foodyar</h6>
                 </div>
-                <div class="sm:flex sm:flex-col sm:item-center">
+                <div class="sm:item-center">
                     <ul class="text-[#8B8BA5]">
                         <li class="text-[#272042] text-[20px] font-semibold">Special Course</li>
                         <li>Wedding Foods</li>
@@ -321,7 +342,7 @@
                         <li>Happy Kids</li>
                     </ul>
                 </div>
-                <div class="sm:flex sm:flex-col sm:item-center">
+                <div class="sm:item-center">
                     <ul class="text-[#8B8BA5]">
                         <li class="text-[#272042] text-[20px] font-semibold">Company</li>
                         <li>APIs Developer</li>
@@ -330,7 +351,7 @@
                         <li>Privacy Policy</li>
                     </ul>
                 </div>
-                <div class="sm:flex sm:flex-col sm:item-center">
+                <div class="sm:item-center">
                     <ul class="text-[#8B8BA5]">
                         <li class="text-[#272042] text-[20px] font-semibold">Be Our Friend</li>
                         <li>3, Season Park, Jakarta</li>
@@ -341,8 +362,10 @@
             </div>
         </div>
         <div class="text-center py-3 text-[#8B8BA5]">
-            <p>All Rights Reserved Foodyar by Pixel from BuildWith Angga 2020</p>
+            <p>All Rights Reserved Foodyar by Pixel from Build With Angga 2020</p>
         </div>
     </footer>
+    <script src="./dist/js/index.js"></script>
 </body>
+
 </html>
